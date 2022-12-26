@@ -1,4 +1,4 @@
-class KBElement extends HTMLElement {
+class KbHtmlElement extends HTMLElement {
     constructor() {
         super();
     }
@@ -36,9 +36,9 @@ class KBElement extends HTMLElement {
     }
 }
 
-customElements.define('kb-element', KBElement);
+customElements.define('kb-element', KbHtmlElement);
 
-class KBAppViewElement extends KBElement {
+class KbHtmlAppViewElement extends KbHtmlElement {
     constructor() {
         super(); 
 
@@ -46,4 +46,4 @@ class KBAppViewElement extends KBElement {
     }
 }
 
-customElements.define('kb-appview', KBAppViewElement);
+customElements.define('kb-appview', KbHtmlAppViewElement);
