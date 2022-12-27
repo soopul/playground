@@ -85,9 +85,9 @@ class SpHTMLAppViewElement extends SpHTMLElement {
     }
 }
 
-customElements.define('sp-appview', SpHTMLAppViewElement);
+customElements.define('app-view', SpHTMLAppViewElement);
 
-class SpHTMLCommonLoadingElement extends SpHTMLElement {
+class SpHTMLAppLoadingElement extends SpHTMLElement {
     constructor() {
         super();
 
@@ -95,14 +95,14 @@ class SpHTMLCommonLoadingElement extends SpHTMLElement {
     }
 }
 
-customElements.define('sp-loading', SpHTMLCommonLoadingElement);
+customElements.define('app-loading', SpHTMLAppLoadingElement);
 
 class AppElementSelector {
     get appview() {
-        return document.querySelector('sp-appview');
+        return document.querySelector('app-view');
     }
     get loading() {
-        return document.querySelector('sp-loading');
+        return document.querySelector('app-loading');
     }
 }
 
